@@ -7,15 +7,31 @@
     padding: 10px;
 }
 .dialog{
-
+    margin: 20px 0;
 }
 .messages{
     padding: 10px;
+    background-color: #fff;
+    border: 3px solid #4380D3;
 }
 .message{
-
+    font-size: 22px;
+    
 }
 
 .dialogsItems .active{
     color:gold
+}
+
+.dialogsItems a{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
+}
+.dialogsItems{
+    
+    background-color: #4380D3;
 }
