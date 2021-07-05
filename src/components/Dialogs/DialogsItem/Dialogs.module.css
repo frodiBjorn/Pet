@@ -12,7 +12,7 @@
 .messages{
     padding: 10px;
     background-color: #fff;
-    border: 3px solid #6996D3;
+    border: 3px solid #4380D3;
 }
 .message{
     font-size: 22px;
@@ -33,5 +33,5 @@
 }
 .dialogsItems{
     
-    background-color: #6996D3
+    background-color: #4380D3;
 }
