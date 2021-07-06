@@ -8,7 +8,6 @@ import Dialogs from './components/Dialogs/Dialogs';
 import Music from './components/Music/Music';
 import News from './components/News/News';
 import Settings from './components/Settings/Settings';
-
 import { BrowserRouter, Route } from 'react-router-dom';
 
 
@@ -21,7 +20,6 @@ import { BrowserRouter, Route } from 'react-router-dom';
 const App = (props) => {
 
   return (
-    <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
         <Navbar />
@@ -37,7 +35,7 @@ const App = (props) => {
         </div>
 
       </div>
-    </BrowserRouter>
+    
   );
 }
 
