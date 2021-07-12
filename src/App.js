@@ -20,25 +20,24 @@ import { BrowserRouter, Route } from 'react-router-dom';
 const App = (props) => {
 
   return (
-      <div className='app-wrapper'>
-        <Header />
-        <Navbar />
+    <div className='app-wrapper'>
+      <Header />
+      <Navbar />
 
-        <div class="app-wrapper-content">
-          <Route path="/dialogs"
-            render={() => <Dialogs state={props.state.dialogsPage} />} />
-          <Route path="/profile"
-            render={() => <Profile
-             profilePage={props.state.profilePage}
-              addPost = {props.addPost}
-              updateNewPostText = {props.updateNewPostText}/>} />
-          <Route path="/news" render={() => <News />} />
-          <Route path="/music" render={() => <Music />} />
-          <Route path="/settings" render={() => <Settings />} />
-        </div>
-
+      <div class="app-wrapper-content">
+        <Route path="/dialogs"
+          render={() => <Dialogs state={props.state.dialogsPage} />} />
+        <Route path="/profile"
+          render={() => <Profile
+            profilePage={props.state.profilePage}
+            dispatch={props.dispatch} />} />
+        <Route path="/news" render={() => <News />} />
+        <Route path="/music" render={() => <Music />} />
+        <Route path="/settings" render={() => <Settings />} />
       </div>
-    
+
+    </div>
+
   );
 }
 
